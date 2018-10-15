@@ -1,0 +1,128 @@
+version: '2'
+services:
+  opsmanager:
+    build: ops-manager/
+    links:
+    - database1
+    - database2
+    - database3
+    - blockstore1
+    - blockstore2
+    - blockstore3
+    ports:
+    - "8080:8080"
+    - "8081:8081"
+    - "443:443"
+    networks:
+    - om
+    mem_limit: 4096M
+    hostname: opsmanager
+
+  ldap:
+    build: ldap/
+    ports:
+    - "389:389"
+    networks:
+    - om
+    hostname: ldap
+
+  database1:
+    image: mongo:4.0
+    ports:
+    - "37017:27017"
+    networks:
+    - om
+    command:  --bind_ip_all --replSet appdb
+    hostname: database1
+
+
+  database2:
+    image: mongo:4.0
+    ports:
+    - "37018:27017"
+    networks:
+    - om
+    command:  --bind_ip_all --replSet appdb
+    hostname: database2
+
+
+  database3:
+    image: mongo:4.0
+    ports:
+    - "37019:27017"
+    networks:
+    - om
+    command:  --bind_ip_all --replSet appdb
+    hostname: database3
+
+
+  blockstore1:
+    image: mongo:4.0
+    ports:
+    - "47018:27018"
+    networks:
+    - om
+    command: --port 27018  --bind_ip_all --replSet bkr
+    hostname: blockstore1
+
+
+  blockstore2:
+    image: mongo:4.0
+    ports:
+    - "47019:27018"
+    networks:
+    - om
+    command: --port 27018  --bind_ip_all --replSet bkr
+    hostname: blockstore2
+
+  blockstore3:
+    image: mongo:4.0
+    ports:
+    - "47020:27018"
+    networks:
+    - om
+    command: --port 27018  --bind_ip_all --replSet bkr
+    hostname: blockstore3
+
+
+  server1:
+    build: mms-automation-agent/
+    security_opt:
+      - seccomp:unconfined
+    links:
+    - opsmanager
+    networks:
+    - om
+    ports:
+    - "27000-27016:27000-27016"
+    hostname: server1
+
+
+
+  server2:
+    build: mms-automation-agent/
+    security_opt:
+      - seccomp:unconfined
+    links:
+    - opsmanager
+    ports:
+    - "28000-28016:27000-27016"
+    networks:
+    - om
+    hostname: server2
+
+  server3:
+    build: mms-automation-agent/
+    security_opt:
+      - seccomp:unconfined
+    links:
+    - opsmanager
+    networks:
+    - om
+    ports:
+    - "29000-29016:27000-27016"
+    hostname: server3
+
+networks:
+  om:
+    driver: bridge

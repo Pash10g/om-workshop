@@ -1,0 +1,170 @@
+{
+  "auth" : {
+    "authoritativeSet" : false,
+    "autoAuthMechanism" : "MONGODB-CR",
+    "autoAuthMechanisms" : [ ],
+    "autoAuthRestrictions" : [ ],
+    "disabled" : true,
+    "usersDeleted" : [ ],
+    "usersWanted" : [ ]
+  },
+  "backupVersions" : [ {
+    "baseUrl" : null,
+    "hostname" : "server2",
+    "name" : "6.8.4.1009-1"
+  } ],
+  "balancer" : { },
+  "indexConfigs" : [ ],
+  "kerberos" : {
+    "serviceName" : "mongodb"
+  },
+  "ldap" : { },
+  "mongoDbVersions" : [ {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "http://192.168.99.100:8080/automation/mongodb-releases/local/linux/mongodb-linux-x86_64-ubuntu1604-4.0.0.tgz"
+    } ],
+    "name" : "4.0.0"
+  } ],
+  "mongosqlds" : [ ],
+  "monitoringVersions" : [ {
+    "baseUrl" : null,
+    "hostname" : "server1",
+    "name" : "6.6.2.464-1"
+  } ],
+  "options" : {
+    "downloadBase" : "/var/lib/mongodb-mms-automation",
+    "downloadBaseWindows" : "%SystemDrive%\\MMSAutomation\\versions"
+  },
+  "processes" : [ {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server1",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_1",
+    "processType" : "mongod",
+    "version" : "4.0.0"
+  }, {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server2",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_2",
+    "processType" : "mongod",
+    "version" : "4.0.0"
+  }, {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server3",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_3",
+    "processType" : "mongod",
+    "version" : "4.0.0"
+  } ],
+  "replicaSets" : [ {
+    "_id" : "myReplicaSet",
+    "members" : [ {
+      "_id" : 0,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_1",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    }, {
+      "_id" : 1,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_2",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    }, {
+      "_id" : 2,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_3",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    } ],
+    "protocolVersion" : "1",
+    "settings" : { }
+  } ],
+  "roles" : [ ],
+  "sharding" : [ ],
+  "ssl" : {
+    "clientCertificateMode" : "OPTIONAL"
+  },
+  "uiBaseUrl" : null,
+  "version" : 2
+}

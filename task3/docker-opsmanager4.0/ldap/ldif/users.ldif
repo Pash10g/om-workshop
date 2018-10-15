@@ -1,0 +1,95 @@
+# users OU
+dn: ou=users,dc=babypearfoo,dc=com
+ou: users
+objectClass: top
+objectClass: organizationalUnit
+
+# admin users - DO NOT DELETE
+
+dn: uid=admin,ou=users,dc=babypearfoo,dc=com
+uid: admin
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: DontChangeMe1
+
+dn: uid=opslaunch@example.com,ou=users,dc=babypearfoo,dc=com
+uid: opslaunch@example.com
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: Passw0rd!
+
+dn: uid=onprem-admin-e2e-test@10gen.com,ou=users,dc=babypearfoo,dc=com
+uid: onprem-admin-e2e-test@10gen.com
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}zDEmBsmQtw6TNMRz8Vgodw==
+
+# test accounts
+dn: uid=blan,ou=users,dc=babypearfoo,dc=com
+uid: blan
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=cmintz,ou=users,dc=babypearfoo,dc=com
+uid: cmintz
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+
+dn: uid=bbloom,ou=users,dc=babypearfoo,dc=com
+uid: bbloom
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=cnelson,ou=users,dc=babypearfoo,dc=com
+uid: cnelson
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=commaman\2C,ou=users,dc=babypearfoo,dc=com
+uid: commaman\2C
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=comma2\,comma,ou=users,dc=babypearfoo,dc=com
+uid: comma2\,comma
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=hardcore\\\,commaman,ou=users,dc=babypearfoo,dc=com
+uid: hardcore\\\,commaman
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+# UserSvcLdapDirectoryIntTests users
+
+dn: uid=user1,ou=users,dc=babypearfoo,dc=com
+uid: user1
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==
+
+dn: uid=user2,ou=users,dc=babypearfoo,dc=com
+uid: user2
+objectClass: top
+objectClass: account
+objectClass: simpleSecurityObject
+userpassword: {MD5}DO8fsQ9gUpAopx9Y5U7Qew==

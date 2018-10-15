@@ -23,17 +23,12 @@ dpkg -i mongodb-mms-automation-agent-manager_latest_amd64.deb
 
 mkdir -p /data
 
-echo "#`hostname -i`     `hostname`" > /etc/hosts
-echo "10.0.0.1  `hostname`" >> /etc/hosts
-
 service rsyslog start
 
-chown -R mongodb:mongodb /data
+if [ "`hostname`" = "server1" ]; then
+  chown -R root:root /data
+else
+  chown -R mongodb:mongodb /data
+fi
 
-/opt/mongodb-mms-automation/bin/mongodb-mms-automation-agent --config=/data/automation-agent.config 2>&1 >> /var/log/mongodb-mms-automation/agent.log
-
-  # disable THP
-  echo -e "never" > /sys/kernel/mm/transparent_hugepage/enabled
-  echo -e "never" > /sys/kernel/mm/transparent_hugepage/defrag
-  # disable mongod upstart service
-  echo 'manual' | sudo tee /etc/init/mongod.override
+sudo -u mongodb  /opt/mongodb-mms-automation/bin/mongodb-mms-automation-agent --config=/data/automation-agent.config 2>&1 >> /var/log/mongodb-mms-automation/agent.log
