@@ -64,7 +64,7 @@ curl -H "Content-Type: application/json" -i -X POST "$opsmanager_url/api/public/
  {
    "username": "opslaunch@example.com",
    "emailAddress": "opslaunch@example.com",
-   "password": "Passw0rd!",
+   "password": "Opensaseme1.",
    "firstName": "admin",
    "lastName": "admin"
  }'  | tail -n 1 > out1.json

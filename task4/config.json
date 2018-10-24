@@ -1,0 +1,3400 @@
+{
+  "auth" : {
+    "authoritativeSet" : false,
+    "autoAuthMechanism" : "MONGODB-CR",
+    "autoAuthMechanisms" : [ "MONGODB-CR" ],
+    "autoAuthRestrictions" : [ ],
+    "autoPwd" : "ZwUFCE8lUl2SKltlaQvBLtV5",
+    "autoUser" : "mms-automation",
+    "deploymentAuthMechanisms" : [ "MONGODB-CR" ],
+    "disabled" : false,
+    "key" : "QoRF4g9D3psd8arBzY0gK0CDUU8LeC92vwMKkuMSkPvBk8tffDLyQZ4EN9o5H6O4rgLPKAWzwR4gYPaR99fqyCOQAGWjAOhxDsRsQdPm7zBt9vAz7JEV2QCGOWnzud7ROZ2xjqKOUlcnMsBsV7NL1Xp3cQx4VAWAGzbvRcjEGBn7LHIxZmXgDQZoHZnjq1fSWHnN3ZaEd2fhzHhJc5kbinVmo4vjxHpbxTDF462AV5zZilocxs69Q98M6Q2N8rxyECIKPq8bNwCvbUWz3T26xZ4WyCVlHHVGOCVNUF0nfG0Q2zpvbpLrmY4P4mrXCNtjlIn1VeIruTERxuZ1XOtb6zL130FRCD16BTX0BNA6VfD9Hw8UHQvtgjtAcvT8ycZTHaKecTTFEu44meeDqSkFpEbOqlBkLyVkqb4ZOdgXVCPHrCp24Hz9XCNx18k5UInNToHN0Cuxp4xV8SyniGHKLW7IXjSW81EGAnnAFKzUxpXkZwnGy2vokVgUJtI5qTbIW3g1Rx1iMI8JOAchce55sWp5QFev96eVyy1wu0K97KU3dqjgec38jlqby4kk2Rbao6bNK2917wpnrKC9jSuCNdIeO6ClDAjPYjD2BcEp7qJARjnVT5mv4rxFIx1FdmN1uNtIFgoG6NY63opvN4BF5OcZ9n3ybo91JLKNlb7908kHjQTyrnHJGvxfC6UxkJ74v87WBVrnttvLBwx6ptgPEjoFe5d8bhFHYqrx0MSsB5woGs6wxIIYcFXLMtISSAx0ZFu1mGiwIw72O5HqUVHnewxfuMvaiwGt8oeLEKthcS6M7wyPwBdmmbDLCaH20qU9eV25NASsrMt4IDp9hGPE3pNF3FitOPup36jb6l84W7hJNnOycAODjDcvtLQ5v8UP6bisnn8C7suIG13HPTg1efl1RHKPGanOPZRIDPYZr2896m1IjtXfLwkQWHImAMHvMLIHOYIPhHgkNHKOjol8qv7TAifoaC8W8YrSsEAUjBL2d6cV9ktXnBEOw0mRQ2kQ",
+    "keyfile" : "/var/lib/mongodb-mms-automation/keyfile",
+    "keyfileWindows" : "%SystemDrive%\\MMSAutomation\\versions\\keyfile",
+    "usersDeleted" : [ ],
+    "usersWanted" : [ {
+      "authenticationRestrictions" : [ ],
+      "db" : "admin",
+      "initPwd" : "6368f0ab41fd24f3f8af03e2364c48c9",
+      "roles" : [ {
+        "db" : "admin",
+        "role" : "clusterMonitor"
+      } ],
+      "scramSha1Creds" : {
+        "iterationCount" : 10000,
+        "salt" : "E9C0ynEm/6jzte9vernF5A==",
+        "serverKey" : "i+q22Hxb01XWHPja6EUnmDulIRc=",
+        "storedKey" : "CPQ6tRkPWJAgJP14ypBv9gVN/n4="
+      },
+      "user" : "mms-monitoring-agent"
+    }, {
+      "authenticationRestrictions" : [ ],
+      "db" : "admin",
+      "initPwd" : "41b4e55f0896657cd3b6c886dcfb5655",
+      "roles" : [ {
+        "db" : "admin",
+        "role" : "clusterAdmin"
+      }, {
+        "db" : "admin",
+        "role" : "readAnyDatabase"
+      }, {
+        "db" : "admin",
+        "role" : "userAdminAnyDatabase"
+      }, {
+        "db" : "local",
+        "role" : "readWrite"
+      }, {
+        "db" : "admin",
+        "role" : "readWrite"
+      } ],
+      "scramSha1Creds" : {
+        "iterationCount" : 10000,
+        "salt" : "L+e1jCPi1OfNy3PaScr5kA==",
+        "serverKey" : "AwlcfmEyQvw4okZdjLW1gfAjpqM=",
+        "storedKey" : "o+JRfV1n6mrejxjvbGv8LQFbHII="
+      },
+      "user" : "mms-backup-agent"
+    } ]
+  },
+  "backupVersions" : [ ],
+  "balancer" : { },
+  "indexConfigs" : [ ],
+  "kerberos" : {
+    "serviceName" : "mongodb"
+  },
+  "ldap" : { },
+  "mongoDbVersions" : [ {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse11-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.0.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.0"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.0.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse11-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1204-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian71-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.0.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a57d8e71e6998a2d0afde7edc11bd23e5661c915",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.0.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.0-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse11-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.1"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.1.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse11-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1204-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian71-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.1.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.1.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.1-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse11-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.2.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.2"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.2.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse11-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1204-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian71-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.2.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "489d177dbd0f0420a8ca04d39fd78d0a2c539420",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.2.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.2-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse11-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.3.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.3"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.3.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "12",
+      "minOsVersion" : "11",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse11-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "13.04",
+      "minOsVersion" : "12.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1204-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian71-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.3.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "9586e557d54ef70f9ca4b43c26892cd55257e1a5",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.3.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.3-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.4.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.4"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.4.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian71-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.4.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.4.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.4.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.4-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.5.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.5"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.5.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.5.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.5.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "a20ecd3e3a174162052ff99913bc2ca9a839d618",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.5.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.5-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.6"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.6.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.6.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.6.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6405d65b1d6432e138b44c13085d0c2fe235d6bd",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.6.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.6-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.7.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.7"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.7.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.7.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.7.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "2628472127e9f1826e02c665c1d93880a204075e",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.7.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.7-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.8.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.8"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.8.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-3.6.8.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-3.6.8.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "6bc9ed599c3fa164703346a22bad17e33fa913e4",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-3.6.8.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "3.6.8-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon2-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "4.0.0"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amazon2-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-4.0.0.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-4.0.0.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-4.0.0.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-4.0.0.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    }, {
+      "architecture" : "s390x",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "3b07af3d4f471ae89e8186d33bbb1d5259597d51",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-s390x-enterprise-rhel67-4.0.0.tgz"
+    } ],
+    "name" : "4.0.0-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon2-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.1.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "4.0.1"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amazon2-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-4.0.1.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1804-4.0.1.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-4.0.1.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-4.0.1.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    }, {
+      "architecture" : "s390x",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "54f1582fc6eb01de4d4c42f26fc133e623f065fb",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-s390x-enterprise-rhel67-4.0.1.tgz"
+    } ],
+    "name" : "4.0.1-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon2-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.2.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    } ],
+    "name" : "4.0.2"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amazon2-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-4.0.2.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1804-4.0.2.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-4.0.2.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-4.0.2.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.24212.0"
+    }, {
+      "architecture" : "s390x",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "fc1573ba18aee42f97a3bb13b67af7d837826b47",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-s390x-enterprise-rhel67-4.0.2.tgz"
+    } ],
+    "name" : "4.0.2-ent"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-suse12-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian81-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian92-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "platform" : "linux",
+      "url" : "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon2-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "platform" : "osx",
+      "url" : "https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "platform" : "windows",
+      "url" : "https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.3.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.34212.0"
+    } ],
+    "name" : "4.0.3"
+  }, {
+    "builds" : [ {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2013.03",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amzn64-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "amazon2",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "",
+      "minOsVersion" : "2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-amazon2-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-4.0.3.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "8.0",
+      "minOsVersion" : "7.0",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-rhel71-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "suse",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "13",
+      "minOsVersion" : "12",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-suse12-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "15.04",
+      "minOsVersion" : "14.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1404-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "9.0",
+      "minOsVersion" : "8.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian81-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "debian",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "10.0",
+      "minOsVersion" : "9.1",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-debian92-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1604-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "19.04",
+      "minOsVersion" : "18.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-ubuntu1804-4.0.3.tgz"
+    }, {
+      "architecture" : "ppc64le",
+      "bits" : 64,
+      "flavor" : "ubuntu",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "17.04",
+      "minOsVersion" : "16.04",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-ppc64le-enterprise-ubuntu1604-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "modules" : [ "enterprise" ],
+      "platform" : "osx",
+      "url" : "https://downloads.mongodb.com/osx/mongodb-osx-x86_64-enterprise-4.0.3.tgz"
+    }, {
+      "architecture" : "amd64",
+      "bits" : 64,
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "modules" : [ "enterprise" ],
+      "platform" : "windows",
+      "url" : "https://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-4.0.3.zip",
+      "win2008plus" : true,
+      "winVCRedistDll" : "vcruntime140.dll",
+      "winVCRedistOptions" : [ "/quiet", "/norestart" ],
+      "winVCRedistUrl" : "http://download.microsoft.com/download/6/D/F/6DF3FF94-F7F9-4F0B-838C-A328D1A7D0EE/vc_redist.x64.exe",
+      "winVCRedistVersion" : "14.0.34212.0"
+    }, {
+      "architecture" : "s390x",
+      "bits" : 64,
+      "flavor" : "rhel",
+      "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c",
+      "maxOsVersion" : "7.0",
+      "minOsVersion" : "6.2",
+      "modules" : [ "enterprise" ],
+      "platform" : "linux",
+      "url" : "https://downloads.mongodb.com/linux/mongodb-linux-s390x-enterprise-rhel67-4.0.3.tgz"
+    } ],
+    "name" : "4.0.3-ent"
+  } ],
+  "mongosqlds" : [ ],
+  "monitoringVersions" : [ {
+    "baseUrl" : null,
+    "hostname" : "server1",
+    "name" : "6.6.2.464-1"
+  } ],
+  "options" : {
+    "downloadBase" : "/var/lib/mongodb-mms-automation",
+    "downloadBaseWindows" : "%SystemDrive%\\MMSAutomation\\versions"
+  },
+  "processes" : [ {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017,
+        "ssl" : {
+          "PEMKeyFile" : "/etc/mongodb/ssl/mongodb.pem",
+          "mode" : "requireSSL"
+        }
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server1",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_1",
+    "processType" : "mongod",
+    "version" : "4.0.3"
+  }, {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017,
+        "ssl" : {
+          "PEMKeyFile" : "/etc/mongodb/ssl/mongodb.pem",
+          "mode" : "requireSSL"
+        }
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server2",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_2",
+    "processType" : "mongod",
+    "version" : "4.0.3"
+  }, {
+    "args2_6" : {
+      "net" : {
+        "port" : 27017,
+        "ssl" : {
+          "PEMKeyFile" : "/the/OPSMANAGER/password/is/Opensaseme1./mongodb.pem",
+          "mode" : "requireSSL"
+        }
+      },
+      "replication" : {
+        "replSetName" : "myReplicaSet"
+      },
+      "storage" : {
+        "dbPath" : "/data"
+      },
+      "systemLog" : {
+        "destination" : "file",
+        "path" : "/data/mongodb.log"
+      }
+    },
+    "authSchemaVersion" : 5,
+    "disabled" : false,
+    "featureCompatibilityVersion" : "4.0",
+    "hostname" : "server3",
+    "logRotate" : {
+      "sizeThresholdMB" : 1000.0,
+      "timeThresholdHrs" : 24
+    },
+    "manualMode" : false,
+    "name" : "myReplicaSet_3",
+    "processType" : "mongod",
+    "version" : "4.0.3"
+  } ],
+  "replicaSets" : [ {
+    "_id" : "myReplicaSet",
+    "members" : [ {
+      "_id" : 0,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_1",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    }, {
+      "_id" : 1,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_2",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    }, {
+      "_id" : 2,
+      "arbiterOnly" : false,
+      "buildIndexes" : true,
+      "hidden" : false,
+      "host" : "myReplicaSet_3",
+      "priority" : 1.0,
+      "slaveDelay" : 0,
+      "votes" : 1
+    } ],
+    "protocolVersion" : "1",
+    "settings" : { }
+  } ],
+  "roles" : [ ],
+  "sharding" : [ ],
+  "ssl" : {
+    "CAFilePath" : "/etc/mongodb/ssl/rootCA.pem",
+    "clientCertificateMode" : "OPTIONAL"
+  },
+  "uiBaseUrl" : null,
+  "version" : 2
+}

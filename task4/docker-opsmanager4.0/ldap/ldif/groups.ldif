@@ -1,0 +1,146 @@
+# groups OU
+dn: ou=groups,dc=babypearfoo,dc=com
+ou: groups
+objectClass: top
+objectClass: organizationalUnit
+
+# groups
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+cn: mms
+objectClass: top
+objectClass: groupOfNames
+member: uid=onprem-admin-e2e-test@10gen.com,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=admin,ou=users,dc=babypearfoo,dc=com
+member: uid=opslaunch@example.com,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=cnelson,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=commaman\2C,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=user1,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=user2,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms-m,ou=groups,dc=babypearfoo,dc=com
+cn: mms-m
+objectClass: top
+objectClass: groupOfNames
+member: uid=blan,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms-a,ou=groups,dc=babypearfoo,dc=com
+cn: mms-a
+objectClass: groupOfNames
+objectClass: top
+member: uid=bbloom,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms-b,ou=groups,dc=babypearfoo,dc=com
+cn: mms-b
+objectClass: groupOfNames
+objectClass: top
+member: uid=cmintz,ou=users,dc=babypearfoo,dc=com
+
+# Recursive groups with escaped characters
+dn: cn=mms\,comma,ou=groups,dc=babypearfoo,dc=com
+cn: mms\,comma
+objectClass: groupOfNames
+objectClass: top
+member: uid=comma2\,comma,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=mms\,comma,ou=groups,dc=babypearfoo,dc=com
+
+dn: cn=mms\\\,hardcorecomma,ou=groups,dc=babypearfoo,dc=com
+cn: mms\\\,hardcorecomma
+objectClass: groupOfNames
+objectClass: top
+member: uid=hardcore\\\,commaman,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=mms,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=mms\\\,hardcorecomma,ou=groups,dc=babypearfoo,dc=com
+
+# UserSvcLdapDirectoryIntTests groups
+
+dn: cn=groupD,ou=groups,dc=babypearfoo,dc=com
+cn: groupD
+objectClass: top
+objectClass: groupOfNames
+member: uid=user1,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupC,ou=groups,dc=babypearfoo,dc=com
+cn: groupC
+objectClass: top
+objectClass: groupOfNames
+member: uid=user1,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupC,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=user2,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupB,ou=groups,dc=babypearfoo,dc=com
+cn: groupB
+objectClass: top
+objectClass: groupOfNames
+member: uid=user1,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupB,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=user2,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupA,ou=groups,dc=babypearfoo,dc=com
+cn: groupA
+objectClass: top
+objectClass: groupOfNames
+member: uid=user1,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupA,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: uid=user2,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupE,ou=groups,dc=babypearfoo,dc=com
+cn: groupE
+objectClass: top
+objectClass: groupOfNames
+member: uid=user2,ou=users,dc=babypearfoo,dc=com
+
+dn: cn=groupA,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=groupC,ou=groups,dc=babypearfoo,dc=com
+
+dn: cn=groupC,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=groupB,ou=groups,dc=babypearfoo,dc=com
+
+dn: cn=groupB,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=groupA,ou=groups,dc=babypearfoo,dc=com
+
+dn: cn=groupA,ou=groups,dc=babypearfoo,dc=com
+changetype: modify
+add: member
+member: cn=groupD,ou=groups,dc=babypearfoo,dc=com

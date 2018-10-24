@@ -5,6 +5,7 @@ while true; do
     nc -q 1 opsmanager 8080 >/dev/null && break
 done
 
+
 ## SSL Key generation
 cd /etc/mongodb/ssl
 myhostname=`hostname`
@@ -16,20 +17,18 @@ cat member.crt member.key > mongodb.pem
 chmod 600 mongodb.pem
 cd -
 
-
-
 curl -OL http://opsmanager:8080/download/agent/automation/mongodb-mms-automation-agent-manager_latest_amd64.deb
 
 dpkg -i mongodb-mms-automation-agent-manager_latest_amd64.deb
+
+mkdir -p /the/OPSMANAGER/password/is/Opensaseme1.
+
+touch /the/OPSMANAGER/password/is/Opensaseme1./mongodb.pem
 
 mkdir -p /data
 
 service rsyslog start
 
-if [ "`hostname`" = "server1" ]; then
-  chown -R root:root /data
-else
-  chown -R mongodb:mongodb /data
-fi
+chown -R mongodb:mongodb /data
 
-sudo -u mongodb  /opt/mongodb-mms-automation/bin/mongodb-mms-automation-agent --config=/data/automation-agent.config 2>&1 >> /var/log/mongodb-mms-automation/agent.log
+ /opt/mongodb-mms-automation/bin/mongodb-mms-automation-agent --config=/data/automation-agent.config 2>&1 >> /var/log/mongodb-mms-automation/agent.log
