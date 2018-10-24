@@ -23,6 +23,6 @@ git clone https://github.com/Pash10g/om-workshop.git
 ```
 
 
-Please take the following google form: https://docs.google.com/forms/d/e/1FAIpQLSc22IvyfAK_bPPMVfVZKSzB4YbiSsBACJdpEGqQp6PgsCcSgg/viewform?usp=sf_link and login with your user.
+Please access the following google form: https://docs.google.com/forms/d/e/1FAIpQLSc22IvyfAK_bPPMVfVZKSzB4YbiSsBACJdpEGqQp6PgsCcSgg/viewform?usp=sf_link and login with your user.
 
 Follow the instructions to complete the workshop.
