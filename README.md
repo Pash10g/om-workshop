@@ -26,3 +26,29 @@ git clone https://github.com/Pash10g/om-workshop.git
 Please access the following google form: https://docs.google.com/forms/d/e/1FAIpQLSc22IvyfAK_bPPMVfVZKSzB4YbiSsBACJdpEGqQp6PgsCcSgg/viewform?usp=sf_link and login with your user.
 
 Follow the instructions to complete the workshop.
+
+## Troubleshooting
+
+1. Reset connection by peer when starting a task:
+```
+Starting OpsManager deployment...Creating network "dockeropsmanager40_om" with driver "bridge"
+Pulling database1 (mongo:4.0)...
+ERROR: error pulling image configuration: read tcp 10.0.2.15:38546->104.18.124.25:443: read: connection reset by peer
+OpsManager deploymnet for version 4.0.4.50216 finished
+```
+
+**Action to resolve:** Rerun the `./launch.sh` again from the same task directory:
+EXAMPLE
+```
+/om-workshop/task1> ./launch.sh
+```
+2. The machine is unresponsive after deployment (due to mac going into sleep etc.)
+
+**Action to resolve:** Drop the enviornonemt:
+```
+/om-workshop/task1>  opslaunch --remove
+...
+/om-workshop/task1> ./launch.sh
+```
+
+
