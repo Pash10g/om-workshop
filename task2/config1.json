@@ -75,6 +75,20 @@
   },
   "backupVersions" : [ ],
   "balancer" : { },
+  "indexConfigs": [
+            {
+                "collectionName": "test",
+                "dbName": "TASK2",
+                "key": [
+                    [
+                        "id",
+                        "1"
+                    ]
+                ],
+                "options": {},
+                "rsName": "myReplicaSet"
+            }
+        ],
   "indexConfigs" : [ ],
   "kerberos" : {
     "serviceName" : "mongodb"
