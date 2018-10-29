@@ -89,7 +89,6 @@
                 "rsName": "myReplicaSet"
             }
         ],
-  "indexConfigs" : [ ],
   "kerberos" : {
     "serviceName" : "mongodb"
   },

@@ -6,7 +6,7 @@ The following workshop allows you to perform hands-on issue solving with Ops Man
 
 There are 4 environments - each one simulates a customer issue with their Ops Manager deployment.
 
-## Prerequesites
+## Prerequisites
 
 This exercise requires the [`opslaunch` utility](https://github.com/10gen/scripts-and-snippets/tree/master/OpsManager/opslaunch).  Please see the [INSTALL.MD](https://github.com/10gen/scripts-and-snippets/blob/master/OpsManager/opslaunch/INSTALL.md) of `opslaunch` and install it before starting this workshop.
 
@@ -14,6 +14,8 @@ Additionally, you will need to create the following directory and place an Ubunt
 ```
 /tmp/omworkshop/bin/
 ```
+
+Finally, you'll need to have Python27 installed on your Mac. Running Python3+ is not supported by opslaunch (yet).
 
 ## Workshop
 
@@ -25,7 +27,9 @@ git clone https://github.com/Pash10g/om-workshop.git
 
 Please access the following google form: https://docs.google.com/forms/d/e/1FAIpQLSc22IvyfAK_bPPMVfVZKSzB4YbiSsBACJdpEGqQp6PgsCcSgg/viewform?usp=sf_link and login with your user.
 
-Follow the instructions to complete the workshop.
+Follow the instructions on the form to complete the workshop.
+
+Please note that each task takes about 10 minute to set up!
 
 ## Troubleshooting
 
@@ -50,3 +54,7 @@ EXAMPLE
 ...
 /om-workshop/task1> ./launch.sh
 ```
+
+3. Getting `mv: rename scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0 to scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0.bak/docker-opsmanager4.0: Directory not empty`
+
+**Action to resolve:** Remove the `scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0.bak/docker-opsmanager4.0` directory and try again
