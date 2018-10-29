@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The following workshop allows you to preform hands on issue solving with Ops Manager 4.0 environments.
+The following workshop allows you to perform hands-on issue solving with Ops Manager 4.0 environments.
 
-There are 4 environments, where each one simulate a customer issue with his Ops Manager deployment.
+There are 4 environments - each one simulates a customer issue with their Ops Manager deployment.
 
 ## Prerequesites
 
-This excersize require the [`opslaunch` utility](https://github.com/10gen/scripts-and-snippets/tree/master/OpsManager/opslaunch).  Please see the [INSTALL.MD](https://github.com/10gen/scripts-and-snippets/blob/master/OpsManager/opslaunch/INSTALL.md) of opslaunch and install it before starting this workshop.
+This exercise requires the [`opslaunch` utility](https://github.com/10gen/scripts-and-snippets/tree/master/OpsManager/opslaunch).  Please see the [INSTALL.MD](https://github.com/10gen/scripts-and-snippets/blob/master/OpsManager/opslaunch/INSTALL.md) of `opslaunch` and install it before starting this workshop.
 
 Additionally, you will need to create the following directory and place an Ubuntu 16.04 deb file of Ops Manager 4.0 latest release. Use [MongoDB download center](https://www.mongodb.com/download-center/ops-manager/releases) to obtain this binary (please do not change its name and make sure it is the **only** file in the directory):
 ```
@@ -37,18 +37,16 @@ ERROR: error pulling image configuration: read tcp 10.0.2.15:38546->104.18.124.2
 OpsManager deploymnet for version 4.0.4.50216 finished
 ```
 
-**Action to resolve:** Rerun the `./launch.sh` again from the same task directory:
+**Action to resolve:** Rerun the `./launch.sh` script again from the same task directory:
 EXAMPLE
 ```
 /om-workshop/task1> ./launch.sh
 ```
 2. The machine is unresponsive after deployment (due to mac going into sleep etc.)
 
-**Action to resolve:** Drop the enviornonemt:
+**Action to resolve:** Drop the environment:
 ```
 /om-workshop/task1>  opslaunch --remove
 ...
 /om-workshop/task1> ./launch.sh
 ```
-
-
