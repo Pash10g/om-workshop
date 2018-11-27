@@ -58,3 +58,5 @@ EXAMPLE
 3. Getting `mv: rename scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0 to scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0.bak/docker-opsmanager4.0: Directory not empty`
 
 **Action to resolve:** Remove the `scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0.bak/docker-opsmanager4.0` directory and try again
+
+If you encounter any further issues or questions please refer to the Owner : Pavel Duchovny or to the #opslaunch slack channel
