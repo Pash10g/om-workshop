@@ -59,4 +59,8 @@ EXAMPLE
 
 **Action to resolve:** Remove the `scripts-and-snippets/OpsManager/opslaunch/opslaunch/docker-opsmanager4.0.bak/docker-opsmanager4.0` directory and try again
 
+
+**Did not help?**
 If you encounter any further issues or questions please refer to the Owner : Pavel Duchovny or to the #opslaunch slack channel
+
+Additionally, you are welcome to file [issues](https://github.com/Pash10g/om-workshop/issues) or pull requests.
