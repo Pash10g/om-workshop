@@ -10,7 +10,7 @@ check_dependencies() {
    which mlaunch > /dev/null || abort "mlaunch is required please install from https://github.com/rueckstiess/mtools or pip install mlaunch"
    which docker-machine > /dev/null || abort "docker-machine is required https://docs.docker.com/machine/ for mac clients can be installed via docker-toolbox"
    which docker-compose > /dev/null || abort "docker-compose is required https://docs.docker.com/compose/ for mac clients can be installed via docker-toolbox"
-   touch test.txt && sed -i 's///g' test.txt > /dev/null || abort "gnu-sed is required - brew install coreutils ; brew install gnu-sed --with-default-names"
+   touch test.txt && sed -i -e 's///g' test.txt > /dev/null || abort "gnu-sed is required - brew install coreutils ; brew install gnu-sed --with-default-names"
    rm -f test.txt
    which jq > /dev/null ||  abort "jq is required -- brew install jq"
    pip show pymongo > /dev/null 2>&1 || abort "pymongo is required. pip install pymongo"
