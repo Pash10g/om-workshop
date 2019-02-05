@@ -14,12 +14,12 @@ docker-machine create `head -n 1 ../cloud-driver.conf` $1 >> /dev/null || eval $
    { cp /usr/local/m/opsmanager-current/mongodb-mms-backup*  ops-manager/src/mongodb-mms-backup.deb 2>/dev/null || true;} && \
    eval $(docker-machine env $1) && \
    printf "${GREEN}done.${NC}\n"
-   sed -i  "s#mms\.centralUrl=.*#mms\.centralUrl=http://$(docker-machine ip $1):8080#g" ./ops-manager/config/conf-mms.properties && \
-   sed -i  "s#mms\.centralUrl=.*#mms\.centralUrl=http://$(docker-machine ip $1):8080#g" ./ops-manager/config/conf-deamon.properties &&  \
+   sed -i -e "s#mms\.centralUrl=.*#mms\.centralUrl=http://$(docker-machine ip $1):8080#g" ops-manager/config/conf-mms.properties && \
+   sed -i  -e "s#mms\.centralUrl=.*#mms\.centralUrl=http://$(docker-machine ip $1):8080#g" ops-manager/config/conf-deamon.properties &&  \
    printf "Building $1 OpsManager deployment (apx 10min, but it depends on the driver...) "
    if [ "$4" = "--deploy_ldap" ]; then
-     docker-compose build ldap opsmanager database1 database2 database3 blockstore1 blockstore2 blockstore3 2>&1 >> /dev/null && printf "${GREEN}done.${NC}\n" && printf "Starting OpsManager deployment..." && \
-     docker-compose up -d ldap opsmanager database1 database2 database3 blockstore1 blockstore2 blockstore3 2>&1 >> /dev/null
+     docker-compose build ldap opsmanager database blockstore 2>&1 >> /dev/null && printf "${GREEN}done.${NC}\n" && printf "Starting OpsManager deployment..." && \
+     docker-compose up -d ldap opsmanager database blockstore 2>&1 >> /dev/null
    else
       docker-compose build  opsmanager database1 database2 database3 blockstore1 blockstore2 blockstore3  2>&1 >> /dev/null && printf "${GREEN}done.${NC}\n" && printf "Starting OpsManager deployment..." && \
       docker-compose up -d  opsmanager database1 database2 database3 blockstore1 blockstore2 blockstore3 2>&1 >> /dev/null
@@ -28,8 +28,8 @@ docker-machine create `head -n 1 ../cloud-driver.conf` $1 >> /dev/null || eval $
    docker-compose  exec  database1 mongo admin --port 27017 --eval 'rs.initiate(); while(!db.isMaster().ismaster){print ("waiting on appdb replica..."); sleep(1000);} db.createUser({ user: "opslaunch", pwd: "mongodb123", roles: [ { role: "root", db: "admin" } ] });rs.add("database2:27017");rs.add("database3:27017");' && \
    docker-compose  exec  blockstore1 mongo admin --port 27018 --eval 'rs.initiate(); while(!db.isMaster().ismaster){print ("waiting on blockstore replica..."); sleep(1000);} db.createUser({ user: "opslaunch", pwd: "mongodb123", roles: [ { role: "root", db: "admin" } ] }); rs.status(); rs.add("blockstore2:27018");rs.add("blockstore3:27018");'
 
-   sed -i  "s#mms\.centralUrl=.*#mms\.centralUrl=http://ROUTABLE_IP:8080#g" ./ops-manager/config/conf-mms.properties && \
-   sed -i  "s#mms\.centralUrl=.*#mms\.centralUrl=http://ROUTABLE_IP:8080#g" ./ops-manager/config/conf-deamon.properties && \
+   sed -i -e  "s#mms\.centralUrl=.*#mms\.centralUrl=http://ROUTABLE_IP:8080#g" ops-manager/config/conf-mms.properties && \
+   sed -i -e "s#mms\.centralUrl=.*#mms\.centralUrl=http://ROUTABLE_IP:8080#g" ops-manager/config/conf-deamon.properties && \
    #cat ./ldap/ldap/ldap-overrides.properties >> ./ops-manager/config/conf-mms.properties
 
 
@@ -64,7 +64,7 @@ curl -H "Content-Type: application/json" -i -X POST "$opsmanager_url/api/public/
  {
    "username": "opslaunch@example.com",
    "emailAddress": "opslaunch@example.com",
-   "password": "Opensaseme1.",
+   "password": "Passw0rd!",
    "firstName": "admin",
    "lastName": "admin"
  }'  | tail -n 1 > out1.json
@@ -83,8 +83,8 @@ groupId=`jq -r '.id' out2.json`
 groupApiKey=`jq -r '.agentApiKey' out2.json`
 
 printf "Configure agent ..."
-sed -i  -e "s#mmsGroupId=.*#mmsGroupId=$groupId#g" -e "s#mmsApiKey=.*#mmsApiKey=$groupApiKey#g"   $automation_path/local.config
-
+sed -i  -e "s#mmsGroupId=.*#mmsGroupId=$groupId#g"   $automation_path/local.config
+sed -i -e "s#mmsApiKey=.*#mmsApiKey=$groupApiKey#g" $automation_path/local.config
 if [ "$3" = "--deploy_nodes" ]; then
    cd $base_dir
    mkdir -p mms-automation-agent/src && \
@@ -108,13 +108,9 @@ else
    $automation_path/../start_agent.sh
    printf "${GREEN}done.${NC}\n"
 fi
-#echo "Lunching Monitoring and Backup agents on host `hostname`..."
-#curl -u "admin@mlaunch.com:$apiKey" --digest -i "$opsmanager_url/api/public/v1.0/groups/$groupId/automationConfig" | tail -n 1 > out3.json
-#
-#sed -i  -e "s#\"monitoringVersions\":\[\]#\"monitoringVersions\" : \[ {\"name\": \"latest\" , \"hostname\": \"`hostname`\",\"baseUrl\": null } \]#g"  -e "s#\"backupVersions\":\[\]#\"backupVersions\":\[ {\"name\": \"latest\" , \"hostname\": \"`hostname`\",\"baseUrl\": null } \]#g" out3.json
-#
-#curl -u "admin@mlaunch.com:$apiKey" -H "Content-Type: application/json" --digest -i "$opsmanager_url/api/public/v1.0/groups/$groupId/automationConfig" -X PUT --data @out3.json
+
 docker-compose  exec  database1 mongo admin --port 27017 --eval 'db.getSiblingDB("mmsdbconfig").config.users.find().forEach(function(docs){ db.getSiblingDB("mmsdbconfig").config.userApiWhitelists.insert({ userId: docs._id, "createdAt" : ISODate("2018-10-18T11:37:40.827Z"), "ipAddress" : "192.168.99.1", "count" : 0 } ); });'
+
 echo ""
 echo "############################################################"
 echo "OpsManager Version : $1 Deployed."
@@ -124,7 +120,7 @@ echo "Password : Passw0rd!"
 echo " "
 echo "Backup:"
 echo "Use <hostname> : blockstore1:27018,blockstore2:27018,blockstore3:27018 for snapshot storage database when setting up the backup daemon on \"Backup\" -> \"configure the backup module\""
-echo "Use <options> : ?replicaSet=bkr"
+echo "Use <options> : replicaSet=bkr"
 echo "Use /snapshots for Filesystem snapshot storage filesystem when setting up the backup daemon on \"Backup\" -> \"configure the backup module\""
 if [ "$3" = "--deploy_nodes" ]; then
   echo " "

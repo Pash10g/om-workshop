@@ -108,12 +108,9 @@ else
    $automation_path/../start_agent.sh
    printf "${GREEN}done.${NC}\n"
 fi
-#echo "Lunching Monitoring and Backup agents on host `hostname`..."
-#curl -u "admin@mlaunch.com:$apiKey" --digest -i "$opsmanager_url/api/public/v1.0/groups/$groupId/automationConfig" | tail -n 1 > out3.json
-#
-#sed -i  -e "s#\"monitoringVersions\":\[\]#\"monitoringVersions\" : \[ {\"name\": \"latest\" , \"hostname\": \"`hostname`\",\"baseUrl\": null } \]#g"  -e "s#\"backupVersions\":\[\]#\"backupVersions\":\[ {\"name\": \"latest\" , \"hostname\": \"`hostname`\",\"baseUrl\": null } \]#g" out3.json
-#
-#curl -u "admin@mlaunch.com:$apiKey" -H "Content-Type: application/json" --digest -i "$opsmanager_url/api/public/v1.0/groups/$groupId/automationConfig" -X PUT --data @out3.json
+
+docker-compose  exec  database1 mongo admin --port 27017 --eval 'db.getSiblingDB("mmsdbconfig").config.users.find().forEach(function(docs){ db.getSiblingDB("mmsdbconfig").config.userApiWhitelists.insert({ userId: docs._id, "createdAt" : ISODate("2018-10-18T11:37:40.827Z"), "ipAddress" : "192.168.99.1", "count" : 0 } ); });'
+
 echo ""
 echo "############################################################"
 echo "OpsManager Version : $1 Deployed."

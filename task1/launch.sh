@@ -39,7 +39,7 @@ groupId=`jq -r '.id' ${OPSLAUNCH_DIR}/docker-opsmanager4.0/task1-om/out2.json`
 echo "################# Initial exercise instructions: #####"
 echo "Adding '192.168.99.1' IP for Public API ..."
 sleep 10
-curl -u opslaunch@example.com:${apiKey} --digest -H "Content-Type: application/json"  -X PUT "http://192.168.99.100:8080/api/public/v1.0/groups/${groupId}/automationConfig" --data '@config.json'
+curl -u opslaunch@example.com:${apiKey} --digest -H "Content-Type: application/json"  -X PUT "http://`docker-machine ip task1-om`:8080/api/public/v1.0/groups/${groupId}/automationConfig" --data '@config.json'
 echo "Once done start the exercise...If you succeded you should know the Primary RESIDENT MEMORY number... Good luck!"
 echo "Hint: To ssh into the servers, from this directory (`pwd`) run \"opslaunch ssh --server <SERVER_NAME>\""
 rm -rf ${OPSLAUNCH_DIR}/docker-opsmanager4.0

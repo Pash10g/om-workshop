@@ -46,7 +46,7 @@ curl -u opslaunch@example.com:${apiKey} --digest \
  --header 'Accept: application/json' \
  --header 'Content-Type: application/json' \
  --include \
- --request PUT http://192.168.99.100:8080/api/public/v1.0/admin/backup/daemon/configs/opsmanager/%2Fvar%2Flib%2Fmongodb%2Fbackup%2F?pretty=true \
+ --request PUT http://`docker-machine ip task3-om`:8080/api/public/v1.0/admin/backup/daemon/configs/opsmanager/%2Fvar%2Flib%2Fmongodb%2Fbackup%2F?pretty=true \
 --data '{
    "configured" : true,
    "machine" : {
@@ -58,7 +58,7 @@ curl -u opslaunch@example.com:${apiKey} --digest \
  --header 'Accept: application/json' \
  --header 'Content-Type: application/json' \
  --include \
- --request POST http://192.168.99.100:8080/api/public/v1.0/admin/backup/snapshot/mongoConfigs?pretty=true \
+ --request POST http:/`docker-machine ip task3-om`:8080/api/public/v1.0/admin/backup/snapshot/mongoConfigs?pretty=true \
  --data '{
   "assignmentEnabled" : false,
   "id" : "blockstore",
@@ -69,14 +69,14 @@ curl -u opslaunch@example.com:${apiKey} --digest \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --include \
---request POST http://192.168.99.100:8080/api/public/v1.0/admin/backup/oplog/mongoConfigs?pretty=true \
+--request POST http://`docker-machine ip task3-om`:8080/api/public/v1.0/admin/backup/oplog/mongoConfigs?pretty=true \
 --data '{
  "assignmentEnabled" : true,
  "id" : "oplogstore",
  "encryptedCredentials" : false,
  "uri" : "mongodb://blockstore1:27018,blockstore2:27018,blockstore3:27018"
 }' && \
-curl -u opslaunch@example.com:${apiKey} --digest -H "Content-Type: application/json"  -X PUT http://192.168.99.100:8080/api/public/v1.0/groups/${groupId}/automationConfig --data '@config1.json'
+curl -u opslaunch@example.com:${apiKey} --digest -H "Content-Type: application/json"  -X PUT http://`docker-machine ip task3-om`:8080/api/public/v1.0/groups/${groupId}/automationConfig --data '@config1.json'
 echo "Once done start the exercise... Once Finished please input the backup file size of the replica set... Good luck!"
 echo "Hint: To ssh into the servers, from this directory (`pwd`) run \"opslaunch ssh --server <SERVER_NAME>\""
 rm -rf ${OPSLAUNCH_DIR}/docker-opsmanager4.0
