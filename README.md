@@ -10,7 +10,7 @@ There are 4 environments - each one simulates a customer issue with their Ops Ma
 
 This exercise requires the [`opslaunch` utility](https://github.com/10gen/scripts-and-snippets/tree/master/OpsManager/opslaunch).  Please see the [INSTALL.MD](https://github.com/10gen/scripts-and-snippets/blob/master/OpsManager/opslaunch/INSTALL.md) of `opslaunch` and install it before starting this workshop.
 
-Additionally, you will need to create the following directory and place an Ubuntu 16.04 deb file of Ops Manager 4.0 latest release. Use [MongoDB download center](https://www.mongodb.com/download-center/ops-manager/releases) to obtain this binary (please do not change its name and make sure it is the **only** file in the directory):
+Additionally, you will need to create the following directory and place an Ubuntu 16.04 deb file of Ops Manager 4.0 latest release. Use [MongoDB download center](https://www.mongodb.com/download-center/ops-manager) to obtain this binary (please do not change its name and make sure it is the **only** file in the directory):
 ```
 /tmp/omworkshop/bin/
 ```
